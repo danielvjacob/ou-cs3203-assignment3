@@ -11,4 +11,12 @@ public class Assignment_Three {
         return result;
     }
 
+    public int Product(int[] array) {
+        int result = 1;
+        for (int i = 0; i < array.length; i++){
+            result = result * array[i];
+        }
+        return result;
+    }
+
 }
