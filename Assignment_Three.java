@@ -13,7 +13,7 @@ public class Assignment_Three {
             number = scan.nextInt();
             array[i] = number;
         }
-        
+
         int sum = Sum(array);
         int product = Product(array);
 
@@ -36,7 +36,16 @@ public class Assignment_Three {
         }
         return result;
     }
+    public static int[] Reverse(int[] array){
+        int[] reversed = new int[array.length];
 
+        for (int i = array.length - 1; i >= 0; i++){
+            int counter = 0;
+            reversed[counter] = array[i];
+            counter += 1;
+        }
+        return reversed;
+    }
 
-
+    
 }
