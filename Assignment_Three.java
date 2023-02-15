@@ -16,9 +16,16 @@ public class Assignment_Three {
 
         int sum = Sum(array);
         int product = Product(array);
+        int[] reversed = Reverse(array);
 
         System.out.println("The sum of the array is: " + sum);
         System.out.println("The product of the array is: " + product);
+        System.out.println("This is reversed array: ");
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+        
+        
     }
     
     public static int Sum(int[] array) {
