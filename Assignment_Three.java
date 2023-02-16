@@ -13,12 +13,19 @@ public class Assignment_Three {
             number = scan.nextInt();
             array[i] = number;
         }
-        
+
         int sum = Sum(array);
         int product = Product(array);
+        int[] reversed = Reverse(array);
 
         System.out.println("The sum of the array is: " + sum);
         System.out.println("The product of the array is: " + product);
+        System.out.println("This is reversed array: ");
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+        
+        
     }
     
     public static int Sum(int[] array) {
@@ -36,7 +43,16 @@ public class Assignment_Three {
         }
         return result;
     }
+    public static int[] Reverse(int[] array){
+        int[] reversed = new int[array.length];
 
+        for (int i = array.length - 1; i >= 0; i++){
+            int counter = 0;
+            reversed[counter] = array[i];
+            counter += 1;
+        }
+        return reversed;
+    }
 
-
+    
 }
