@@ -14,6 +14,8 @@ public class Assignment_Three {
             array[i] = number;
         }
 
+
+        //these are static methods
         int sum = Sum(array);
         int product = Product(array);
         int[] reversed = Reverse(array);
@@ -26,6 +28,8 @@ public class Assignment_Three {
         }
         
         
+
+        //use for loop to print out reversed array
     }
     
     public static int Sum(int[] array) {
